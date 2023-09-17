@@ -2,14 +2,23 @@
   "name": "jshook-scripts",
   "version": "1.0.0",
   "description": "存放一些自己用的 JsHook 脚本",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
+    "generate": "tsc --build tsconfig.build.json && ts-node src/generate.ts"
   },
   "keywords": [],
   "author": {
-    "name" : "Wankko Ree",
-    "email" : "wkr@wkr.moe",
-    "url" : "https://github.com/WankkoRee"
+    "name": "Wankko Ree",
+    "email": "wkr@wkr.moe",
+    "url": "https://github.com/WankkoRee"
   },
-  "license": "GPL-3.0-only"
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "@tsconfig/esm": "^1.0.4",
+    "@tsconfig/node-lts": "^18.12.5",
+    "@tsconfig/strictest": "^2.0.2",
+    "@types/node": "^20.6.2",
+    "ts-node": "github:TypeStrong/ts-node#main",
+    "typescript": "^5.2.2"
+  }
 }
